@@ -1,0 +1,70 @@
+body {
+    font-family: Comic Sans MS, cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: grey;
+    border: 1px solid black;
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.section-title {
+    position: absolute;
+    
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+.section-titleChicken { 
+    background-color: pink;
+    float: right;
+ }
+.section-titleBeef { 
+    background-color: red;
+    float: right;
+ }
+.section-titleSuchi {
+     background-color: yellow;
+     float: right;
+     }
+
+p {
+    padding: 10px;
+    clear: right;
+}
+
+@media (max-width: 991px) {
+    .menu-item {
+        width: 45%; 
+    }
+    .menu-item:nth-child(3) {
+        width: 100%;
+        margin-top: 20px; 
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-item {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+}
